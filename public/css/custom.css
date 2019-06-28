@@ -1,0 +1,34 @@
+.uk-navbar-left{
+margin-left: 40px;
+}
+.uk-navbar-right {
+margin-right: 40px;
+}
+.uk-margin {
+    margin-bottom: 5px;
+}
+
+.uk-card-primary.uk-card-body .uk-divider-icon, .uk-card-primary>:not([class*=uk-card-media]) .uk-divider-icon, .uk-card-secondary.uk-card-body .uk-divider-icon, .uk-card-secondary>:not([class*=uk-card-media]) .uk-divider-icon, .uk-light .uk-divider-icon, .uk-offcanvas-bar .uk-divider-icon, .uk-overlay-primary .uk-divider-icon, .uk-section-primary:not(.uk-preserve-color) .uk-divider-icon, .uk-section-secondary:not(.uk-preserve-color) .uk-divider-icon, .uk-tile-primary:not(.uk-preserve-color) .uk-divider-icon, .uk-tile-secondary:not(.uk-preserve-color) .uk-acheivement-icon {
+    background-image: url(../img/picto-auditif-rose.svg);
+    background-size: 30px 25px;
+}
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding: 0 10px 0 10px;
+    font-size: .875rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-decoration: none;
+}
+.uk-overlay {
+    padding: 10px 10px;
+}
+address, dl, fieldset, figure, ol, p, pre, ul {
+    margin: 0 0 0 0;
+}
+/* .uk-navbar-item, .uk-navbar-nav>li>a:hover {
+    background-color: white;
+} */
