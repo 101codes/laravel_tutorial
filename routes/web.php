@@ -16,13 +16,15 @@
 // });
 
 Route::get('/clear-cache', function() {
-    $exitCode = Artisan::call('migrate:refresh --seed');
     $exitCode = Artisan::call('config:clear');
     $exitCode = Artisan::call('cache:clear');
     $exitCode = Artisan::call('config:cache');
-    return 'DONE clear cache, migrate and seeding the data'; //Return anything
+    return 'DONE clear cache'; //Return anything
 });
-
+Route::get('/seed', function() {
+    $exitCode = Artisan::call('migrate:refresh --seed');
+    return 'DONE seeding the data'; //Return anything
+});
 Auth::routes();
 Route::get('/home','HomeController@index');
 Route::get('/auth/{provdier}', 'Auth\RegisterController@redirectToProvider');
